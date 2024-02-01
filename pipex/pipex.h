@@ -13,6 +13,7 @@
 #ifndef PIPEX_H
 # define PIPEX_H
 
+# include <sys/wait.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
@@ -21,6 +22,7 @@
 
 typedef struct t_arg
 {
+    int         os;
 	int			path_place;
 	char		**path;
 	char		**cmd1;

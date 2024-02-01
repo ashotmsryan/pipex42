@@ -52,6 +52,6 @@ void	mng_proc(t_data *val, int fd1, int fd2, char **env)
 	close (fd2);
 	close (val->end[0]);
 	close (val->end[1]);
-	waitpid(val->pid1, NULL, 0);
+    waitpid(val->pid1, NULL, 0);
 	waitpid(val->pid2, NULL, 0);
 }

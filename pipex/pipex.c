@@ -25,11 +25,6 @@ static void	find_paths(t_data *val, char *pt)
 
 static void	pars_cmd(t_data *val, char **av)
 {
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 0;
 	if (!av[2] || !av[3] || (av[2] && !av[2][0]) || (av[3] && !av[3][0]))
 		ft_print_er("No detected cmd!\n", val);
 	val->cmd1 = ft_split(av[2], ' ');
